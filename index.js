@@ -33,7 +33,7 @@ client.on('ready', async () => {
 
   setInterval(() => {
     setTimeout(() => { channel.send('pls pm'); }, 3000);
-  }, 45000);
+  }, 40000);
 
   setInterval(() => {
     channel.send('pls search');
@@ -57,6 +57,10 @@ client.on('message', async message => {
 
   if (message.content.includes('What type of meme do you want to post?')) {
     await message.channel.send(random(MEMES));
+  };
+
+  if (message.content.includes('Laptop is broken lmao')) {
+    await message.channel.send('pls buy laptop');
   };
 });
 
