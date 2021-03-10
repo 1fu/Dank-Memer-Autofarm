@@ -59,7 +59,7 @@ client.on('message', async message => {
     await message.channel.send(random(MEMES));
   };
 
-  if (message.content.includes('Laptop is broken lmao')) {
+  if (message.content.includes('**Laptop** is broken lmao')) {
     await message.channel.send('pls buy laptop');
   };
 });
