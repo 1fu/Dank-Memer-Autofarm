@@ -5,7 +5,9 @@ const PLACES = ['sewer','air', 'attic', 'bed', 'bushes', 'bus', 'coat', 'couch',
 const MEMES = 'frick'.split('');
 const ID = '270904126974590976';
 
-const { 'channel-id': id, token, prefix } = require('./config.json');
+const id = process.env.id;
+const token = process.env.token;
+const prefix = process.env.prefix;
 
 const random = (array = []) => {
   return array[Math.floor(Math.random() * array.length)];
