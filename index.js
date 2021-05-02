@@ -24,19 +24,23 @@ client.on('ready', async () => {
   channel.send('pls search');
 
   setTimeout(() => {
-    channel.send('pls pm');
+    channel.send(prefix + 'pm');
   }, 3000);
-
+  
+  setTimeout(() => {
+    channel.send(prefix + 'daily');
+  }, 43200000);
+  
   setInterval(() => {
-    channel.send('pls beg');
+    channel.send(prefix + 'beg');
   }, 45000);
 
   setInterval(() => {
-    setTimeout(() => { channel.send('pls pm'); }, 3000);
+    setTimeout(() => { channel.send(prefix + 'pm'); }, 3000);
   }, 40000);
 
   setInterval(() => {
-    channel.send('pls search');
+    channel.send(prefix + 'search');
   }, 60000);
 
   console.log('Autofarm started.');
@@ -60,7 +64,7 @@ client.on('message', async message => {
   };
 
   if (message.content.includes('**Laptop** is broken lmao')) {
-    await message.channel.send('pls buy laptop');
+    await message.channel.send(prefix + 'buy laptop');
   };
 });
 
