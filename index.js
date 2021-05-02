@@ -22,8 +22,8 @@ client.on('ready', async () => {
     return setTimeout(process.exit, 2000);
   };
 
-  channel.send('pls beg');
-  channel.send('pls search');
+  channel.send(prefix + 'beg');
+  channel.send(prefix + 'search');
 
   setTimeout(() => {
     channel.send(prefix + 'pm');
