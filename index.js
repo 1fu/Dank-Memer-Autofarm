@@ -1,4 +1,4 @@
-const { Client } = require('discord.js');
+const { Client } = require('discord.js-self);
 const client = new Client();
 
 const PLACES = ['sewer','air', 'attic', 'bed', 'bushes', 'bus', 'coat', 'couch', 'discord', 'dog', 'dresser', 'glovebox', 'dumpster', 'glovebox', 'grass', ' laundromat', 'mailbox', 'pantry', 'pocket', 'shoe', 'sink', 'tree', 'uber'];
