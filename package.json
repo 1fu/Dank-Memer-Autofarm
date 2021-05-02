@@ -10,6 +10,6 @@
   "author": "endless",
   "license": "ISC",
   "dependencies": {
-    "zerodayz.js": "^11.6.2"
+    "discord.js-selfbot-new": "^12.5.0"
   }
 }
