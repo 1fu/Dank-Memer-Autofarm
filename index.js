@@ -14,7 +14,7 @@ const random = (array = []) => {
 };
 
 client.on('ready', async () => {
-  const channel = client.channels.get(id);
+  const channel = client.channels.cache.fetch(id);
 
   if (!channel) {
     console.log('Invalid Channel ID');
