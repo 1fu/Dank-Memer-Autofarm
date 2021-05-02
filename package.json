@@ -10,6 +10,6 @@
   "author": "endless",
   "license": "ISC",
   "dependencies": {
-    "ZeroDayz": "^11.6.2"
+    "zerodayz.js": "^11.6.2"
   }
 }
